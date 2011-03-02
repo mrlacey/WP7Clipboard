@@ -1,0 +1,10 @@
+﻿This library works by storing the "clipboard" data by hiding it in an image and saving that image in the MediaLibrary on the device.
+
+IMPORTANT - It's not possible to programmatically delete files from the MediaLibrary!
+This means that continued use of this library will add more and more seemingly identical looking images in their "saved pictures" folder.
+
+It is highly recommended that you warn your users about this behaviour and give them the ability to disable it.
+
+Use the ProxyClipboard object where possible (see demo app for an example) to minimize access to the MediaLibrary.
+
+This library used the Clipboard API in the full version of the .net framework (http://msdn.microsoft.com/en-us/library/25w5tzxb.aspx) as a guideline.
